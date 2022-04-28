@@ -46,13 +46,23 @@ body {
     background-color: #1f2937;
     display: flex;
     color: #e5e7eb;
-    padding: 5% 5%;
+    padding: 2%;
+}
+
+.intro-content {
+    display: flex;
+    flex-basis: 60%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
 }
 
 .intro-content :nth-last-of-type(2) {
     width: 50%;
     font-size: 48px;
     font-weight: bolder;
+    margin-block-end: 0px;
+    display: flex;
 }
 
 .intro-content :nth-last-of-type(1) {
@@ -60,7 +70,92 @@ body {
     font-size: 18px;
 }
 
+.intro-image {
+    display: flex;
+    align-items: flex-end;
+}
+
 .intro-image img {
-    width: 300px;
+    width: 400px;
+    display: flex;
+    align-content: flex-start;
+}
+
+/* Randon Info part */
+
+.info {
+    align-content: center;
+}
+
+.info h2 {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.info div {
+    justify-content: space-around;
+    text-align: center;
+}
+
+.info img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: medium solid #3882F6;
+    border-radius: 15px;
+}
+
+.options {
+    display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Quote part */
+
+.quote {
+    background-color: #e5e7eb;
+    display: flex;
+    padding: 4% 4%;
+}
+
+.quote p {
+    font-size: 54px;
+    text-align: center;
+}
+
+.quote b {
+    flex-wrap: wrap;
+    display: flex;
+    align-content: flex-end;
+}
+
+.action {
+    background-color: #3882F6;
+    color: white;
+    margin: 50px 200px;
+    padding: 20px 50px;
+}
+
+.action-info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.action-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action button {
+    background-color: #3882F6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10%;
+    width: 130px;
+    height: 50px;
 }
